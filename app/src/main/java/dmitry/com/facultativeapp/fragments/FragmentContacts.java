@@ -62,7 +62,7 @@ public class FragmentContacts extends Fragment {
     }
 
     private void permissionsRequest() {
-        // Check the SDK version and whether the permission is already granted or not.
+        // Проверяет сдк и наличие разрешения
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
                 ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_CONTACTS) != PackageManager.PERMISSION_GRANTED ) {
@@ -77,7 +77,7 @@ public class FragmentContacts extends Fragment {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 1) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission is granted
+                // Разрешения получено
                 showContacts();
             } else {
                 Toast.makeText(getActivity(), "Until you grant the permission, we cannot display the " +

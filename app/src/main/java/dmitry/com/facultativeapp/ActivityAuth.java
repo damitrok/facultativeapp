@@ -106,7 +106,7 @@ public class ActivityAuth extends AppCompatActivity {
         });
     }
 
-    //Метод для перехода на след активити - которое головное
+    //Метод для перехода на главное активити
     private void goMainActivity() {
         Intent intent = new Intent(this, ActivityMain.class);
         startActivity(intent);

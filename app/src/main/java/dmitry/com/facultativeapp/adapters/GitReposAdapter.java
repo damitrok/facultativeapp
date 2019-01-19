@@ -14,7 +14,7 @@ import dmitry.com.facultativeapp.R;
 
 public class GitReposAdapter extends RecyclerView.Adapter<GitReposAdapter.RepoViewHolder> {
 
-    //Адаптер котрый отвечает за отрисовку реплзиториев с гита
+    //Адаптер котрый отвечает за отрисовку репозиториев с гита
 
     private List<GitHubRepo> gitHubRepoList;
 

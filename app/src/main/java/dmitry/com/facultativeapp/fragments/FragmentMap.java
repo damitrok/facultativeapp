@@ -127,10 +127,14 @@ public class FragmentMap extends Fragment {
         mapView.onStop();
         MapKitFactory.getInstance().onStop();
     }
-
+    //Метод отрисовки нашего пути
     private void drawSection(SectionMetadata.SectionData data, Polyline geometry) {
         PolylineMapObject polylineMapObject = mapObjects.addPolyline(geometry);
-
+        // выбираем один из 4 типов
+        // 1 ждать общественный транспорт
+        // 2 пешком
+        // 3 метро
+        // 4 ехать на общественном транспорте
         if (data.getTransports() != null) {
             for (Transport transport : data.getTransports()) {
                 if (transport.getLine().getStyle() != null) {
@@ -139,7 +143,8 @@ public class FragmentMap extends Fragment {
                     return;
                 }
             }
-
+            // линии
+            // автобус - зеленая, метро - цвета веток, остальные - синяя
             HashSet<String> knownVehicleType = new HashSet<>();
             knownVehicleType.add("bus");
             knownVehicleType.add("tramway");
