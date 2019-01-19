@@ -18,16 +18,16 @@
         android:layout_height="90dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/mirea_logo_dark"  />
+        app:srcCompat="@drawable/mirea_logo_dark" />
 
     <TextView
         android:id="@+id/githubName"
+        style="@style/SmallFont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/SmallFont"
         android:layout_marginStart="0dp"
-        android:text="@string/github_name"
         android:layout_marginBottom="0dp"
+        android:text="@string/github_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </LinearLayout>

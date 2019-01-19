@@ -27,8 +27,9 @@
         android:contentDescription="@string/mirea_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377"
+        app:layout_constraintVertical_bias="0.427"
         app:srcCompat="@drawable/mirea_logo_dark" />
 </android.support.constraint.ConstraintLayout>
